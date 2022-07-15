@@ -1,0 +1,116 @@
+:root{
+    --tipografia-facebook: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+    --color-azul-facebook:#1877f2;
+    --color-verde-facebook: #42b72a;
+    --color-gris-facebook: #f0f2f5;
+    --color-blanco: #ffffff;
+    --color-negro: #000000;
+    --color-azul-facebook-hover: #166fe5;
+
+    /* "--"se usa para decir que es una variable y se definen en una pseudo clase root(es una configuracion de estilos de la pagina(cambia la configuracion de estilos de una pagina a como la definimos)) */
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #f0f2f5;
+}
+
+.contenedor{
+    width: 100%;
+    height: 70vh;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    /* repeat(cantidad, tamaño) */
+    grid-column-gap: 30px;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.seccion1{
+    display: flex;
+    font-size: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+.logtext{
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    width: 500px;
+}
+.logtext img{
+    width: 60%;
+    margin: -30px 0 -15px -30px;
+}
+.seccion2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 70px;
+
+    /* 
+    background-color: #fff;
+    box-sizing: border-box;
+    box-shadow: 0 2px 4px;
+    border-radius: 8px ;
+    text-align: center; */
+}
+.contain-form{
+    text-align: center;
+    box-shadow: 0 0 8px gray;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 24px;
+}
+
+.formulario{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;10
+}
+
+.formulario input{
+    background-color: #fff;
+    margin: 6px 0;
+    border: 1px solid #dddfe2;
+    border-radius: 6px;
+    font-size: 17px;
+    padding: 14px 16px;
+    width: 330px;
+}
+
+.btn-inicio-sesion{
+    width: 400px;
+    height: 52px;
+    background-color: var(--color-azul-facebook);
+    color: var(--color-blanco);
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 6px;
+    border: none;
+    transition: all .5s;
+}
+
+.btn-inicio-sesion:hover{
+    background-color: var(--color-azul-facebook-hover);
+}
+
+.btn-crear{
+    background-color: var(--color-verde-facebook);
+    color: var(--color-blanco);
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 45px;
+    padding: 0 24px;
+    border-radius: 7px;
+    border: none;
+    transition: all .6s;
+}
